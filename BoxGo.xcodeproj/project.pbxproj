@@ -422,7 +422,7 @@
 				DEVELOPMENT_TEAM = 9V2NTFEW66;
 				INFOPLIST_FILE = BoxGo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = miranda.szhao.BoxGo;
+				PRODUCT_BUNDLE_IDENTIFIER = miranda.szhao.boxgo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -435,7 +435,7 @@
 				DEVELOPMENT_TEAM = 9V2NTFEW66;
 				INFOPLIST_FILE = BoxGo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = miranda.szhao.BoxGo;
+				PRODUCT_BUNDLE_IDENTIFIER = miranda.szhao.boxgo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
