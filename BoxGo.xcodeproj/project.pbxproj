@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		97BD9186BADB36F3B53672F5 /* Pods_BoxGo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A707A117F8FB887A6DC2A6 /* Pods_BoxGo.framework */; };
 		9F7A4E051F845D1300AD122F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7A4E041F845D1300AD122F /* AppDelegate.swift */; };
 		9F7A4E071F845D1300AD122F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7A4E061F845D1300AD122F /* ViewController.swift */; };
 		9F7A4E0A1F845D1300AD122F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F7A4E081F845D1300AD122F /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 		9F7A4E121F845D1300AD122F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F7A4E101F845D1300AD122F /* LaunchScreen.storyboard */; };
 		9F7A4E1D1F845D1300AD122F /* BoxGoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7A4E1C1F845D1300AD122F /* BoxGoTests.swift */; };
 		9F7A4E281F845D1300AD122F /* BoxGoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7A4E271F845D1300AD122F /* BoxGoUITests.swift */; };
+		9F7A4E361F87EDF100AD122F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9F7A4E351F87EDF100AD122F /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19A707A117F8FB887A6DC2A6 /* Pods_BoxGo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BoxGo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F88AF9139E0E8DEA4D4987C /* Pods-BoxGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoxGo.release.xcconfig"; path = "Pods/Target Support Files/Pods-BoxGo/Pods-BoxGo.release.xcconfig"; sourceTree = "<group>"; };
 		9F7A4E011F845D1300AD122F /* BoxGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoxGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F7A4E041F845D1300AD122F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F7A4E061F845D1300AD122F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +53,8 @@
 		9F7A4E231F845D1300AD122F /* BoxGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoxGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F7A4E271F845D1300AD122F /* BoxGoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxGoUITests.swift; sourceTree = "<group>"; };
 		9F7A4E291F845D1300AD122F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F7A4E351F87EDF100AD122F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C9DE9873CB9547C6A860BC6E /* Pods-BoxGo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoxGo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BoxGo/Pods-BoxGo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97BD9186BADB36F3B53672F5 /* Pods_BoxGo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +83,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02F606DD9A4BFF325D6B5FDA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C9DE9873CB9547C6A860BC6E /* Pods-BoxGo.debug.xcconfig */,
+				8F88AF9139E0E8DEA4D4987C /* Pods-BoxGo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1868064C0F42AF6C5218A29F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19A707A117F8FB887A6DC2A6 /* Pods_BoxGo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9F7A4DF81F845D1300AD122F = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +107,8 @@
 				9F7A4E1B1F845D1300AD122F /* BoxGoTests */,
 				9F7A4E261F845D1300AD122F /* BoxGoUITests */,
 				9F7A4E021F845D1300AD122F /* Products */,
+				02F606DD9A4BFF325D6B5FDA /* Pods */,
+				1868064C0F42AF6C5218A29F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +125,7 @@
 		9F7A4E031F845D1300AD122F /* BoxGo */ = {
 			isa = PBXGroup;
 			children = (
+				9F7A4E351F87EDF100AD122F /* GoogleService-Info.plist */,
 				9F7A4E041F845D1300AD122F /* AppDelegate.swift */,
 				9F7A4E061F845D1300AD122F /* ViewController.swift */,
 				9F7A4E081F845D1300AD122F /* Main.storyboard */,
@@ -135,9 +162,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F7A4E2C1F845D1300AD122F /* Build configuration list for PBXNativeTarget "BoxGo" */;
 			buildPhases = (
+				DC0CF522DCFB31279C75CF22 /* [CP] Check Pods Manifest.lock */,
 				9F7A4DFD1F845D1300AD122F /* Sources */,
 				9F7A4DFE1F845D1300AD122F /* Frameworks */,
 				9F7A4DFF1F845D1300AD122F /* Resources */,
+				D3B62D75AF66D01FAB27D057 /* [CP] Embed Pods Frameworks */,
+				245B76EC36E95EE180C07F60 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -239,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F7A4E121F845D1300AD122F /* LaunchScreen.storyboard in Resources */,
+				9F7A4E361F87EDF100AD122F /* GoogleService-Info.plist in Resources */,
 				9F7A4E0F1F845D1300AD122F /* Assets.xcassets in Resources */,
 				9F7A4E0A1F845D1300AD122F /* Main.storyboard in Resources */,
 			);
@@ -259,6 +290,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		245B76EC36E95EE180C07F60 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BoxGo/Pods-BoxGo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3B62D75AF66D01FAB27D057 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BoxGo/Pods-BoxGo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC0CF522DCFB31279C75CF22 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BoxGo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9F7A4DFD1F845D1300AD122F /* Sources */ = {
@@ -417,6 +499,7 @@
 		};
 		9F7A4E2D1F845D1300AD122F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9DE9873CB9547C6A860BC6E /* Pods-BoxGo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9V2NTFEW66;
@@ -430,6 +513,7 @@
 		};
 		9F7A4E2E1F845D1300AD122F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F88AF9139E0E8DEA4D4987C /* Pods-BoxGo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9V2NTFEW66;

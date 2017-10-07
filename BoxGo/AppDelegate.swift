@@ -2,12 +2,13 @@
 //  AppDelegate.swift
 //  BoxGo
 //
-//  Created by Miranda Y on 10/3/17.
+//  Created by Shanshan on 10/3/17.
 //  Copyright © 2017 Miranda Zhao. All rights reserved.
 //
 
 import UIKit
 import CoreData
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        FIRApp.configure()
         return true
     }
 
