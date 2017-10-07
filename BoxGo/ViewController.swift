@@ -12,12 +12,23 @@ import FirebaseDatabase
 
 class ViewController: UIViewController {
 
+    //outlets
+    @IBOutlet weak var username: UITextField!
+    @IBOutlet weak var password: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        post()
+       // post()
     }
     
+    //actions
+    @IBAction func signUpButtonClicked(_ sender: UIButton) {
+    }
+    @IBAction func signInClicked(_ sender: UIButton) {
+    }
+    
+    //functions
     func post() {
         let title = "Title"
         let message = "My message"
