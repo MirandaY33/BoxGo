@@ -12,20 +12,24 @@ import FirebaseDatabase
 
 class ViewController: UIViewController {
 
+
     //outlets
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var password: UITextField!
     
+    //variables
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-       // post()
     }
     
     //actions
     @IBAction func signUpButtonClicked(_ sender: UIButton) {
+        handleSignUp()
     }
     @IBAction func signInClicked(_ sender: UIButton) {
+        handleLogin()
     }
     
     //functions
@@ -39,11 +43,24 @@ class ViewController: UIViewController {
         
     }
     
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func handleLogin() {
+        let databaseRef = FIRDatabase.database().reference()
+        guard let username = username.text else {
+            print("username issue")
+            return
+        }
+        guard let password = password.text else {
+            print("password issue")
+            return
+        }
+        
     }
+    
+    func handleSignUp() {
+        
+    }
+    
+
 
 
 }
