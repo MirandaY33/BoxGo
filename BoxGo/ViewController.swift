@@ -8,7 +8,6 @@
 
 import UIKit
 import Firebase
-import FirebaseDatabase
 
 class ViewController: UIViewController {
 
@@ -33,30 +32,42 @@ class ViewController: UIViewController {
     }
     
     //functions
-    func post() {
-        let title = "Title"
-        let message = "My message"
-        let post : [String : AnyObject] = ["title" :title as AnyObject,
-                                           "message" : message as AnyObject]
-        let databaseRef = FIRDatabase.database().reference()
-        databaseRef.child("boxgo_accounts").childByAutoId().setValue(post)
-        
-    }
+//    func post() {
+//        let title = "Title"
+//        let message = "My message"
+//        let post : [String : AnyObject] = ["title" :title as AnyObject,
+//                                           "message" : message as AnyObject]
+//        let databaseRef = FIRDatabase.database().reference()
+//        databaseRef.child("boxgo_accounts").childByAutoId().setValue(post)
+//        
+//    }
     
     func handleLogin() {
-        let databaseRef = FIRDatabase.database().reference()
-        guard let username = username.text else {
-            print("username issue")
-            return
-        }
-        guard let password = password.text else {
-            print("password issue")
-            return
-        }
+
+        Auth.auth().signIn(withEmail: username.text!, password: password.text!, completion: {
+            user, error in
+            if error != nil {
+                print("username or password is inccorect")
+            } else {
+                print("logged in!")
+            }
+        })
+
+
         
     }
     
     func handleSignUp() {
+        Auth.auth().createUser(withEmail: username.text!, password: password.text!, completion: {
+            (user, error) in
+            if error != nil {
+                print("error")
+            } else {
+                print("user created!")
+                self.handleLogin()
+            }
+            
+        })
         
     }
     
