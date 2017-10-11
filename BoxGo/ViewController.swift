@@ -47,9 +47,9 @@ class ViewController: UIViewController {
         Auth.auth().signIn(withEmail: username.text!, password: password.text!, completion: {
             user, error in
             if error != nil {
-                print("username or password is inccorect")
+                self.displayAlertMessage(message: "The combination of username and password is incorrect")
             } else {
-                print("logged in!")
+                self.displayAlertMessage(message: "You have logged in!")
             }
         })
 
@@ -61,16 +61,22 @@ class ViewController: UIViewController {
         Auth.auth().createUser(withEmail: username.text!, password: password.text!, completion: {
             (user, error) in
             if error != nil {
-                print("error")
+                self.displayAlertMessage(message: "Account cannot be created")
             } else {
                 print("user created!")
                 self.handleLogin()
             }
-            
         })
         
     }
     
+    func displayAlertMessage(message: String)
+    {
+        let alert = UIAlertController(title: "My Alert", message: message, preferredStyle: .alert);
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil);
+        alert.addAction(okAction);
+        self.present(alert, animated: true, completion: nil);
+    }
 
 
 
