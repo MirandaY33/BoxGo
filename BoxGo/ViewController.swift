@@ -49,7 +49,8 @@ class ViewController: UIViewController {
             if error != nil {
                 self.displayAlertMessage(message: "The combination of username and password is incorrect")
             } else {
-                self.displayAlertMessage(message: "You have logged in!")
+                //self.displayAlertMessage(message: "You have logged in!")
+                self.performSegue(withIdentifier: "loggedInSegue", sender: self)
             }
         })
 
