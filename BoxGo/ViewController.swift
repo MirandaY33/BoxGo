@@ -13,15 +13,14 @@ class ViewController: UIViewController {
 
 
     //outlets
-    @IBOutlet weak var username: UITextField!
     @IBOutlet weak var password: UITextField!
-    
+    @IBOutlet weak var username: UITextField!
+
     //variables 
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
     }
     
     //actions
@@ -54,8 +53,6 @@ class ViewController: UIViewController {
                 self.performSegue(withIdentifier: "loggedInSegue", sender: self)
             }
         })
-
-
         
     }
     
@@ -63,7 +60,11 @@ class ViewController: UIViewController {
         Auth.auth().createUser(withEmail: username.text!, password: password.text!, completion: {
             (user, error) in
             if error != nil {
-                self.displayAlertMessage(message: "Account cannot be created")
+                if (self.password.text!.characters.count < 6) {
+                  self.displayAlertMessage(message: "Password must contain at least 6 characters.")
+                } else {
+                  self.displayAlertMessage(message: "There is an issue with sign up")
+                }
             } else {
                 print("user created!")
                 self.handleLogin()

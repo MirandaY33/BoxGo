@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		97BD9186BADB36F3B53672F5 /* Pods_BoxGo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A707A117F8FB887A6DC2A6 /* Pods_BoxGo.framework */; };
+		9F2A16D81FAE94830022229A /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2A16D71FAE94830022229A /* LoginTextField.swift */; };
 		9F7A4E051F845D1300AD122F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7A4E041F845D1300AD122F /* AppDelegate.swift */; };
 		9F7A4E071F845D1300AD122F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7A4E061F845D1300AD122F /* ViewController.swift */; };
 		9F7A4E0A1F845D1300AD122F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F7A4E081F845D1300AD122F /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		19A707A117F8FB887A6DC2A6 /* Pods_BoxGo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BoxGo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F88AF9139E0E8DEA4D4987C /* Pods-BoxGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoxGo.release.xcconfig"; path = "Pods/Target Support Files/Pods-BoxGo/Pods-BoxGo.release.xcconfig"; sourceTree = "<group>"; };
+		9F2A16D71FAE94830022229A /* LoginTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
 		9F7A4E011F845D1300AD122F /* BoxGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoxGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F7A4E041F845D1300AD122F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F7A4E061F845D1300AD122F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				9F7A4E351F87EDF100AD122F /* GoogleService-Info.plist */,
 				9F7A4E041F845D1300AD122F /* AppDelegate.swift */,
 				9F7A4E061F845D1300AD122F /* ViewController.swift */,
+				9F2A16D71FAE94830022229A /* LoginTextField.swift */,
 				9F7A4E081F845D1300AD122F /* Main.storyboard */,
 				9F7A4E0E1F845D1300AD122F /* Assets.xcassets */,
 				9F7A4E101F845D1300AD122F /* LaunchScreen.storyboard */,
@@ -357,6 +360,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F7A4E071F845D1300AD122F /* ViewController.swift in Sources */,
+				9F2A16D81FAE94830022229A /* LoginTextField.swift in Sources */,
 				9F7A4E0D1F845D1300AD122F /* BoxGo.xcdatamodeld in Sources */,
 				9F7A4E051F845D1300AD122F /* AppDelegate.swift in Sources */,
 			);
@@ -611,6 +615,7 @@
 				9F7A4E2E1F845D1300AD122F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9F7A4E2F1F845D1300AD122F /* Build configuration list for PBXNativeTarget "BoxGoTests" */ = {
 			isa = XCConfigurationList;
@@ -619,6 +624,7 @@
 				9F7A4E311F845D1300AD122F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9F7A4E321F845D1300AD122F /* Build configuration list for PBXNativeTarget "BoxGoUITests" */ = {
 			isa = XCConfigurationList;
@@ -627,6 +633,7 @@
 				9F7A4E341F845D1300AD122F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
